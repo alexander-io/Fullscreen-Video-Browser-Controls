@@ -41,6 +41,7 @@ let fullscreen_video = (path_to_file, attachment_element) => {
   back_button_container.style.alignSelf = 'flex-end'
 
   let back_button = document.createElement('div')
+  back_button.className = 'back-button waves-effect waves-light'
   back_button.className = 'back-button'
   back_button.style.width = '10vw'
   back_button.style.height = '15vh'
@@ -69,6 +70,7 @@ let fullscreen_video = (path_to_file, attachment_element) => {
   control_wrapper.style.flexDirection = 'row'
 
   let skip_back_button = document.createElement('div')
+  skip_back_button.className = 'skip-back-button waves-effect waves-light'
   skip_back_button.style.width = '20vw'
   skip_back_button.style.height = '30vh'
   skip_back_button.style.display = 'flex'
@@ -80,6 +82,7 @@ let fullscreen_video = (path_to_file, attachment_element) => {
   skip_back_button.appendChild(skip_back_button_icon)
 
   let play_button = document.createElement('div')
+  play_button.className = 'play-button waves-effect waves-light'
   play_button.style.width = '20vw'
   play_button.style.height = '30vh'
   let play_button_icon = document.createElement('img')
@@ -88,6 +91,7 @@ let fullscreen_video = (path_to_file, attachment_element) => {
   play_button.appendChild(play_button_icon)
 
   let skip_forward_button = document.createElement('div')
+  skip_forward_button.className = 'skip-forward-button waves-effect waves-light'
   skip_forward_button.style.width = '20vw'
   skip_forward_button.style.height = '30vh'
   skip_forward_button.style.display = 'flex'
